@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook Feed - St. Antony the Abbot Church</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <div class="container nav-container">
+      <div class="logo">St. Antony the Abbot Church</div>
+      <div class="nav-toggle" id="navToggle">☰</div>
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#events">Feasts</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="facebook.html" class="active">Facebook Feed</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0"
+    nonce="abc123">
+  </script>
+
+  <section class="hero small-hero">
+    <div class="container">
+      <h1>Facebook Feed</h1>
+      <p>Follow our latest updates from our official Facebook account.</p>
+    </div>
+  </section>
+
+  <section id="facebook-feed" class="section">
+    <div class="container">
+      <h2 class="section-title">News & Facebook Updates</h2>
+      <div id="fb-posts" class="fb-posts-grid"></div>
+    </div>
+  </section>
+  
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous"
+    src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v17.0"
+    nonce="FbSDK"></script>
+  <script src="js/fb-feed.js"></script>
+  
+  
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 St. Antony the Abbot Church | All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="../js/script.js"></script>
+  <script src="fb-feed.js"></script>
+</body>
+</html>
